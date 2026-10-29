@@ -17,7 +17,7 @@ in
     lazygit
     neovim
     # the font everything renders in
-    nerd-fonts.hack
+    nerd-fonts.jetbrains-mono
   ];
   fonts.fontconfig.enable = true;
   home.sessionVariables.EDITOR = "nvim";
