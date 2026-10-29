@@ -39,6 +39,7 @@
     ];
     casks = [
       "wezterm"
+      "visual-studio-code"
       "claude-code"
       "bitwarden"
       "private-internet-access"
