@@ -42,6 +42,7 @@
       "claude-code"
       "bitwarden"
       "private-internet-access"
+      "tailscale-app"
       "vorssaint"
     ];
   };
