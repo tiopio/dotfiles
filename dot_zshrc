@@ -1,7 +1,17 @@
-alias -- ll='ls -la'
+# Shell History Settings
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=10000
+SAVEHIST=10000
 
+# CLI ZSH Tools
+source <(fzf --zsh)
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Alias List
+alias -- ll='ls -la'
+alias -- ..='cd..'
+alias -- add='git add .'
+
+# Starship Initialization
 eval "$(starship init zsh)"
