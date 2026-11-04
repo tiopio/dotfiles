@@ -15,3 +15,6 @@ alias -- add='git add .'
 
 # Starship Initialization
 eval "$(starship init zsh)"
+
+# Opencode
+export PATH=/Users/pius/.opencode/bin:$PATH

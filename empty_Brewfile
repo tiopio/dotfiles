@@ -4,6 +4,8 @@ brew "fzf"
 brew "starship"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
+brew "ollama"
+
 cask "ghostty"
 cask "helium-browser"
 cask "visual-studio-code"
