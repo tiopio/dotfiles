@@ -36,6 +36,18 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 # Set default Finder view to List View (Nlsv)
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
+# --- Keyboard & Text Input ---
+# Do not capitalize words automatically
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+# Do not correct spelling automatically
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+# Do not add period with double-space
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+# Do not use smart quotes
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+# Do not use smart dashes
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
 # --- Apply Changes ---
 # Restart affected services so changes take effect immediately
 killall Dock
