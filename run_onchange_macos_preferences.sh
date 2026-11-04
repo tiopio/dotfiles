@@ -47,6 +47,10 @@ defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Do not use smart dashes
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+# Fast key repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 2
+# Short delay until repeat
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 # --- Apply Changes ---
 # Restart affected services so changes take effect immediately
