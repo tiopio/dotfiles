@@ -52,6 +52,23 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 # Short delay until repeat
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
+# --- Screenshots ---
+# Save screenshots to a dedicated folder
+mkdir -p "${HOME}/Pictures/Screenshots"
+defaults write com.apple.screencapture location -string "${HOME}/Pictures/Screenshots"
+# Remove the drop shadow from window screenshots
+defaults write com.apple.screencapture disable-shadow -bool true
+
+# --- System Behaviors ---
+# Prevent macOS from creating .DS_Store files on network and USB drives
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+# Expand save and print panels by default (bypasses the small dropdown box)
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+
 # --- Apply Changes ---
 # Restart affected services so changes take effect immediately
 killall Dock
