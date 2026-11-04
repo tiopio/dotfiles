@@ -35,8 +35,13 @@ defaults write com.apple.finder NewWindowTarget -string "PfHm"
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 # Set default Finder view to List View (Nlsv)
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+# Show the Path Bar
+defaults write com.apple.finder ShowPathbar -bool true
+# Show the Status Bar
+defaults write com.apple.finder ShowStatusBar -bool true
 
-# --- Keyboard & Text Input ---
+
+# --- Keyboard & Trackpad Input ---
 # Do not capitalize words automatically
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 # Do not correct spelling automatically
@@ -51,6 +56,9 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 defaults write NSGlobalDomain KeyRepeat -int 2
 # Short delay until repeat
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
+# Tap to click on trackpad
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 
 # --- Screenshots ---
 # Save screenshots to a dedicated folder
