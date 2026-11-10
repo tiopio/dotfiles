@@ -9,7 +9,7 @@ brew "helix"
 
 cask "ghostty"
 cask "helium-browser"
-cask "visual-studio-code"
+cask "zed"
 cask "private-internet-access"
 cask "bitwarden"
 cask "tailscale-app"
